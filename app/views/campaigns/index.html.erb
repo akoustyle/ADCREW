@@ -1,1 +1,8 @@
 <h1>Campagne AD CREW</h1>
+
+<% @campaigns.each do |campaign| %>
+  <h2>
+    <%= link_to campaign.title, campaign %>
+  </h2>
+<% end %>
+<%= link_to "Gram it", new_campaign_path %>

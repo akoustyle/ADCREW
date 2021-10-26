@@ -2,3 +2,5 @@
 <p><%= @campaign.description %></p>
 
 <%= link_to "Back", root_path %>
+<%= link_to "Edit", edit_campaign_path %>
+<%= link_to "Delete", campaign_path, method: :delete, data: { confirm: "Are you sure?"} %>

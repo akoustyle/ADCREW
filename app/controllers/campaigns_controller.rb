@@ -1,6 +1,8 @@
 class CampaignsController < ApplicationController
   before_action :find_campaign, only: [:show, :edit, :update, :destroy]
+
   def index
+    @campaigns = Campaign.all.order("created_at DESC")
   end
 
   def show
@@ -18,6 +20,22 @@ class CampaignsController < ApplicationController
     else
       render "new"
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @campaign.update(campaign_params)
+      redirect_to @campaign, notice: "Congrats! Campaign was updated!"
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @campaign.destroy
+    redirect_to root_path
   end
 
   private

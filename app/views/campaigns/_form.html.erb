@@ -1,0 +1,8 @@
+<%= simple_form_for @campaign do |c| %>
+
+
+  <div class="form-group">
+    <%= c.input :title, input_html: { class: 'form-control'} %>
+    <%= c.input :description, input_html: { class: 'form-control'} %>
+    <%= c.button :submit, class: 'btn btn-info' %>
+<% end %>

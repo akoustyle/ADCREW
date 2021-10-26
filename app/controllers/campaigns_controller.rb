@@ -10,10 +10,13 @@ class CampaignsController < ApplicationController
 
   def new
     @campaign = Campaign.new
+    # @campaign = current_user.campaigns.build
+  end
   end
 
   def create
     @campaign = Campaign.new(campaign_params)
+    # @campaign = current_user.campaigns.build(campaign_params)
 
     if @campaign.save
         redirect_to @campaign, notice: "Yessss! It was posted"

@@ -11,9 +11,9 @@
   </head>
 
   <body>
-    <%= flash.each do |name, msg| %>
-      <%= content_tag :div, msg, class: "alert alert-in" %>
-    <% end %>
+    <%# <%= flash.each do |name, msg| %>
+      <%# <%= content_tag :div, msg, class: "alert alert-in" %>
+    <%# <% end %>
     <%= yield %>
   </body>
 </html>

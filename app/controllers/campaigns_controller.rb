@@ -12,7 +12,6 @@ class CampaignsController < ApplicationController
     @campaign = Campaign.new
     # @campaign = current_user.campaigns.build
   end
-  end
 
   def create
     @campaign = Campaign.new(campaign_params)

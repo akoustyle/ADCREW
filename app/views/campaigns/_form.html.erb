@@ -3,14 +3,14 @@
     <h2>
       <%= pluralize(@campaigns.errors.count, "error") %>
         <%# <ul>
-          <%= @campaigns.errors.full_message.each do |msg| %>
-            <%# <li>
+          <% @campaigns.errors.full_message.each do |msg| %>
+             <%# <li>
             <%= msg %>
             <%# </li>
           <% end  %>
-        <%# </ul>
-    </h2> %>
-  <%# </div> %>
+         <%# </ul>
+    </h2>
+  </div> %>
 
   <div class="form-group">
     <%= c.input :title, input_html: { class: 'form-control'} %>

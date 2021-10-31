@@ -1,6 +1,7 @@
 <h1>Campagne AD CREW</h1>
 
 <% @campaigns.each do |campaign| %>
+  <%= link_to campaign.image %>
   <h2>
     <%= link_to campaign.title, campaign %>
   </h2>

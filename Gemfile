@@ -26,6 +26,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.16.0'
 
 
 # Use Active Storage variant

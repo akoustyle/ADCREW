@@ -1,5 +1,11 @@
 <h1><%= @campaign.title %> </h1>
 <p><%= @campaign.description %></p>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+  <% @campaign.images.each do |image| %>
+    <%= cl_image_tag image, height: 300, witdh:400, crop: :fill %>
+  Cool campaign
+  <% end %>
+</div>
 
 <p> Post by <%= @campaign.user.email %></p>
 <br>

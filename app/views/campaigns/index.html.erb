@@ -1,10 +1,15 @@
 <h1>Campagne AD CREW</h1>
-
-<% @campaigns.each do |campaign| %>
-  <%= link_to (image_tag campaign.image.url(:medium)), campaign %>
-  <h2>
-    <%= link_to campaign.title, campaign %>
-  </h2>
-<% end %>
+<div class="col-md-6 col-md-offset-3">
+  <div id="campaigns" class="transitions-enabled">
+    <% @campaigns.each do |campaign| %>
+      <div class="box panel panel-default">
+        <%= link_to (image_tag campaign.image.url(:medium)), campaign %>
+        <h2>
+          <%= link_to campaign.title, campaign %>
+        </h2>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <%# <%= link_to "Gram it", new_campaign_path %>

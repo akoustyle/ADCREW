@@ -123,6 +123,8 @@ GEM
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
+    masonry-rails (0.2.4)
+      railties
     matrix (0.4.2)
     method_source (1.0.0)
     mime-types (3.3.1)
@@ -274,6 +276,7 @@ DEPENDENCIES
   dotenv-rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  masonry-rails
   paperclip
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
